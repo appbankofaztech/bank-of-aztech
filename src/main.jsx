@@ -16,6 +16,8 @@ const config = getDefaultConfig({
   appName: 'Bank of Aztech',
   projectId: '417117568ba3710a7108cb78adc524e8',
   chains: [avalanche],
+  ssr: true,
+  walletConnectProjectId: '417117568ba3710a7108cb78adc524e8'
 })
 
 const queryClient = new QueryClient()
@@ -37,6 +39,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             accentColorForeground: 'white',
             borderRadius: 'medium',
           })}
+          showRecentTransactions={true}
+          modalSize="compact"
         >
           <ChakraProvider theme={theme}>
             <App />
