@@ -15,8 +15,8 @@ export default defineConfig({
         theme_color: '#805AD5',
         background_color: '#1A202C',
         display: 'standalone',
-        scope: '/app.bankofaztech/',
-        start_url: '/app.bankofaztech/',
+        scope: '/',
+        start_url: '/',
         icons: [
           {
             src: 'pwa-192x192.png',
@@ -32,5 +32,5 @@ export default defineConfig({
       }
     })
   ],
-  base: '/app.bankofaztech/'
+  base: '/'
 }) 
